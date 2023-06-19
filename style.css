@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("./assets/loveImg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+.wrapper h1{
+    color: rgb(197, 19, 19);
+}
+.wrapper h2{
+    color: rgb(152, 238, 13);
+}
+.wrapper p{
+    color: blueviolet;
+    font-style: italic;
+    font-weight: bold;
+    font-family: cursive;
+}
+.wrapper label{
+    color: rgb(13, 81, 207);
+    font-weight: bolder;
+}
+.wrapper{
+    background-color: rgb(221, 236, 241);
+    height: auto;
+    padding-bottom: 20px;
+    padding: 10px;
+    width: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    color: #eddad6;
+    box-shadow: 0px 0px 500px red;
+}
+.wrapper input{
+    height: 30px;
+    width: 50%;
+    border-radius: 5px;
+    border: 2px solid rgb(16, 168, 16);
+    color: rgb(219, 18, 226);
+    padding: 3px;
+    font-size: 18px;
+}
+.wrapper button{
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    color: rgb(211, 58, 58);
+    background-color: white;
+    border: 1px solid rgb(211, 58, 58);;
+    border-radius: 10px;
+}
+.wrapper button:hover{
+    color: white;
+    background-color: rgb(211, 58, 58);;
+    border: 1px solid white;
+}
+.wrapper #showPercentage{
+    font-style: italic;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 25px;
+    color: red;
+}
+@media (max-width:910px) {
+    body{
+        background-image: url("./assets/small.jpg");
+        align-items: center;
+    }
+}
+@media (max-width:770px) {
+    body{
+        background-repeat: repeat-y;
+    }
+    .wrapper{
+        width: 400px;
+    }
+}
+@media (max-width:670px) {
+    .wrapper{
+        width: 340px;
+    }
+}
+@media (max-width:618px) {
+    body{
+        background-image: none;
+        background-color: blueviolet;
+    }
+    .wrapper{
+        width: 300px;
+    }
+    .wrapper input{
+        width: 70%;
+    }
+}
+@media (max-width:350px) {
+    .wrapper{
+        width: 220px;
+    }
+    .wrapper input{
+        width: 90%;
+    }
+}
+@media (max-width:255px) {
+    .wrapper{
+        width: 180px;
+    }
+    .wrapper input{
+        width: 100%;
+    }
+}
+@media (max-width:200px) {
+    .wrapper{
+        width: 160px;
+    }
+    .wrapper input{
+        width: 100%;
+    }
+}
